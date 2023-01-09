@@ -47,6 +47,7 @@ public class Main {
     public static void task5() {
         System.out.println("Задание 5");
 
+        // в этом диапазоне дополнительные условия не требуются
         for (int i = 1904; i <= 2096; i += 4) {
             System.out.println(i + " год является високосным.");
         }
@@ -56,43 +57,49 @@ public class Main {
         System.out.println("Задание 6");
 
         for (int i = 7; i < 100; i += 7) {
-            System.out.println(i);
+            System.out.print(i + " ");
         }
+        System.out.println();
     }
 
     public static void task7() {
         System.out.println("Задание 7");
 
         for (int i = 1; i <= 512; i *= 2) {
-            System.out.println(i);
+            System.out.print(i + " ");
         }
+        System.out.println();
     }
 
     public static void task8() {
         System.out.println("Задание 8");
+
         int total = 0;
+        int money = 29000;
 
         for (int i = 1; i <= 12; i++) {
 
-            total += 29000;
+            total += money;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей.");
         }
     }
 
     public static void task9() {
         System.out.println("Задание 9");
+
         float total = 0;
-        int salary = 29000;
+        int money = 29000;
 
         for (int i = 1; i <= 12; i++) {
+            total += money;
             total += total / 100;
-            total += salary;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей.");
         }
     }
 
     public static void task10() {
         System.out.println("Задание 10");
+
         int two = 2;
 
         for (int i = 1; i <= 10; i++) {
